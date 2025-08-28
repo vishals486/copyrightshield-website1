@@ -1,497 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CopyrightShield – Fast DMCA Takedowns & Copyright Infringement Removal</title>
-    <meta name="description" content="We help creators, brands, and businesses remove infringing content from Google, YouTube, social media, and piracy sites quickly and legally.">
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Font: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        /* Custom scrollbar for a cleaner look */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f5f9; /* slate-100 */
-        }
-        ::-webkit-scrollbar-thumb {
-            background-color: #94a3b8; /* slate-400 */
-            border-radius: 4px;
-        }
-        .bg-pattern {
-            background-image: radial-gradient(#4b5563 1px, transparent 1px);
-            background-size: 40px 40px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CopyrightShield – Fast DMCA Takedowns & Copyright Infringement Removal</title>
+
+  <!-- SEO & Open Graph -->
+  <meta name="description" content="We help creators, brands, and businesses remove infringing content from Google, YouTube, social media, and piracy sites quickly and legally.">
+  <meta property="og:title" content="CopyrightShield – Fast DMCA Takedowns & Copyright Infringement Removal">
+  <meta property="og:description" content="We help creators, brands, and businesses remove infringing content quickly and legally.">
+  <meta property="og:image" content="https://www.copyrightshield.net/og-image.png">
+  <meta property="og:url" content="https://www.copyrightshield.net">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <!-- Navigation Bar -->
-    <header class="sticky top-0 z-50 bg-white shadow-sm">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
-                <a href="#hero" class="flex-shrink-0 flex items-center space-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        <path d="M9 12l2 2 4-4"/>
-                    </svg>
-                    <span class="text-3xl font-bold text-slate-900">
-                        <span class="text-indigo-600">Copyright</span>Shield
-                    </span>
-                </a>
-                <!-- Navigation Links (Hidden on small screens) -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="#how-it-works" class="text-slate-600 hover:text-indigo-600 font-medium transition duration-300">How It Works</a>
-                    <a href="#services" class="text-slate-600 hover:text-indigo-600 font-medium transition duration-300">Services</a>
-                    <a href="#pricing" class="text-slate-600 hover:text-indigo-600 font-medium transition duration-300">Pricing</a>
-                    <a href="#about" class="text-slate-600 hover:text-indigo-600 font-medium transition duration-300">About Us</a>
-                    <a href="#contact" class="text-slate-600 hover:text-indigo-600 font-medium transition duration-300">Contact</a>
-                </div>
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-slate-600 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 rounded-md">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="md:hidden hidden">
-                <div class="flex flex-col space-y-4 pt-2 pb-3">
-                    <a href="#how-it-works" class="block px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-100 rounded-md">How It Works</a>
-                    <a href="#services" class="block px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-100 rounded-md">Services</a>
-                    <a href="#pricing" class="block px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-100 rounded-md">Pricing</a>
-                    <a href="#about" class="block px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-100 rounded-md">About Us</a>
-                    <a href="#contact" class="block px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-100 rounded-md">Contact</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">CopyrightShield</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#services" class="hover:text-indigo-600">Services</a>
+        <a href="#pricing" class="hover:text-indigo-600">Pricing</a>
+        <a href="#faq" class="hover:text-indigo-600">FAQ</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+      </nav>
+      <a href="#contact" class="bg-indigo-600 text-white px-5 py-2 rounded-full shadow hover:bg-indigo-700 transition">Get Started</a>
+    </div>
+  </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="relative overflow-hidden pt-20 pb-20 md:pt-32 md:pb-32 bg-slate-50">
-            <div class="absolute inset-0 bg-pattern opacity-5"></div>
-            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight tracking-tight">
-                    We take down infringing content fast—across websites and social media.
-                </h1>
-                <p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-                    We help creators, brands, and businesses remove pirated content and counterfeits quickly and legally with our automated AI agents.
-                </p>
-                <div class="mt-10 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="#services" class="inline-block bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
-                        Explore Our Services
-                    </a>
-                    <a href="#contact" class="inline-block bg-white text-indigo-600 font-semibold py-3 px-8 rounded-full border border-indigo-200 hover:bg-indigo-50 transition duration-300 transform hover:scale-105">
-                        Request a Demo
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- How It Works Section -->
-        <section id="how-it-works" class="py-20 md:py-28 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl font-bold text-slate-900">How Our Takedown Process Works</h2>
-                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-                    A simple, powerful process built on years of operational experience.
-                </p>
-                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <!-- Step 1 -->
-                    <div class="flex flex-col items-center p-8 bg-slate-50 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg">
-                        <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center font-bold text-2xl">
-                            1
-                        </div>
-                        <h3 class="mt-6 text-xl font-semibold text-slate-900">Detect Infringement</h3>
-                        <p class="mt-2 text-slate-600">
-                            Our AI agents proactively scan the web, social media, and marketplaces for unauthorized copies of your content.
-                        </p>
-                    </div>
-                    <!-- Step 2 -->
-                    <div class="flex flex-col items-center p-8 bg-slate-50 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg">
-                        <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center font-bold text-2xl">
-                            2
-                        </div>
-                        <h3 class="mt-6 text-xl font-semibold text-slate-900">Approve & Document</h3>
-                        <p class="mt-2 text-slate-600">
-                            You get a clear dashboard with all potential infringements. We gather all the necessary evidence for a legal takedown.
-                        </p>
-                    </div>
-                    <!-- Step 3 -->
-                    <div class="flex flex-col items-center p-8 bg-slate-50 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg">
-                        <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center font-bold text-2xl">
-                            3
-                        </div>
-                        <h3 class="mt-6 text-xl font-semibold text-slate-900">Remove & Report</h3>
-                        <p class="mt-2 text-slate-600">
-                            The takedown is automatically initiated, and we provide you with a full report on the outcome.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pricing Section -->
-        <section id="pricing" class="py-20 md:py-28 bg-slate-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl font-bold text-slate-900">Flexible Pricing for Your Needs</h2>
-                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-                    We offer a single, powerful service to handle your takedowns from start to finish.
-                </p>
-                <div class="mt-16 max-w-xl mx-auto">
-                    <!-- Pricing Card 2 (Managed Services) -->
-                    <div class="flex flex-col p-8 bg-indigo-600 text-white rounded-xl shadow-xl border-4 border-indigo-500 transition-all duration-300">
-                        <h3 class="text-xl font-semibold">Managed Services</h3>
-                        <p class="mt-4 text-indigo-100">Let our team of experts handle everything for you.</p>
-                        <div class="mt-6">
-                            <span class="text-4xl font-extrabold">Custom Quote</span>
-                        </div>
-                        <ul class="mt-6 space-y-2 text-left">
-                            <li class="flex items-center space-x-2">
-                                <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                </svg>
-                                <span>Proactive monitoring for all your assets.</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                </svg>
-                                <span>Dedicated takedown manager.</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                </svg>
-                                <span>Full automation and case tracking.</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                </svg>
-                                <span>Counter-notice and search engine removal support.</span>
-                            </li>
-                        </ul>
-                        <a href="#contact" class="mt-8 block bg-white text-indigo-600 font-semibold py-3 px-6 rounded-full hover:bg-indigo-50 transition duration-300">
-                            Contact Sales
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Case Studies Section -->
-        <section id="case-studies" class="bg-white py-20 md:py-28">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl font-bold text-slate-900">How We've Helped Brands</h2>
-                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-                    Our proactive approach delivers real results for our clients.
-                </p>
-                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-                    <!-- Case Study 1 -->
-                    <div class="bg-slate-50 p-8 rounded-xl shadow-md border border-slate-200 transition-all duration-300 hover:shadow-xl">
-                        <p class="text-3xl font-extrabold text-indigo-600">
-                            95% Success Rate
-                        </p>
-                        <h3 class="mt-4 text-xl font-semibold text-slate-900">Removed Pirated Software from Gofile</h3>
-                        <p class="mt-2 text-slate-600">
-                            "CopyrightShield helped us remove dozens of unauthorized copies of our software from a hard-to-find file-sharing platform, protecting our brand and saving us significant revenue."
-                        </p>
-                    </div>
-                    <!-- Case Study 2 -->
-                    <div class="bg-slate-50 p-8 rounded-xl shadow-md border border-slate-200 transition-all duration-300 hover:shadow-xl">
-                        <p class="text-3xl font-extrabold text-indigo-600">
-                            80% Faster Takedowns
-                        </p>
-                        <h3 class="mt-4 text-xl font-semibold text-slate-900">Proactively Blocked Counterfeit Goods</h3>
-                        <p class="mt-2 text-slate-600">
-                            "Our brand was being impersonated on social media, but CopyrightShield's AI agents found and removed the accounts before they could cause any significant damage."
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section id="faq" class="bg-white py-20 md:py-28">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold text-slate-900 text-center">Frequently Asked Questions</h2>
-                <div class="mt-12 space-y-6">
-                    <!-- Question 1 -->
-                    <div class="p-6 bg-slate-50 rounded-xl shadow-md">
-                        <h3 class="text-lg font-semibold text-slate-900">What makes your service different from others in the market?</h3>
-                        <p class="mt-2 text-slate-600">
-                            Many takedown services are built on older technologies that struggle with new-age platforms. We are a modern, agile startup built specifically for the web3 era. Our AI agents are designed to be adaptive and find hidden infringements that legacy systems often miss, giving you a faster and more effective takedown process.
-                        </p>
-                    </div>
-                    <!-- Question 2 -->
-                    <div class="p-6 bg-slate-50 rounded-xl shadow-md">
-                        <h3 class="text-lg font-semibold text-slate-900">How do your AI agents find infringement on new platforms?</h3>
-                        <p class="mt-2 text-slate-600">
-                            Our agents are designed to be adaptive. They learn from new types of piracy, using a combination of public APIs, advanced web scraping, and content recognition to find content on platforms like Gofile and Wetransfer, as well as decentralized social media.
-                        </p>
-                    </div>
-                    <!-- Question 3 -->
-                    <div class="p-6 bg-slate-50 rounded-xl shadow-md">
-                        <h3 class="text-lg font-semibold text-slate-900">What happens if a takedown notice is ignored or rejected?</h3>
-                        <p class="mt-2 text-slate-600">
-                            Our system automatically escalates the issue. We'll send notices to the hosting provider and can assist in getting the content removed from search engine results to minimize its visibility.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Our Modern Approach Section -->
-        <section id="our-approach" class="py-20 md:py-28 bg-slate-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="md:flex md:space-x-12">
-                    <div class="md:w-1/2 mt-12 md:mt-0">
-                        <h2 class="text-3xl font-bold text-slate-900">A Takedown Team Built for the Modern Internet</h2>
-                        <p class="mt-4 text-lg text-slate-600">
-                            The internet is evolving beyond traditional websites, with new technologies like Web3, decentralized platforms, and NFTs. Traditional takedown methods are often too slow and rigid to keep up with these changes.
-                        </p>
-                        <p class="mt-4 text-lg text-slate-600">
-                            We are different. Our AI agents are designed to be agile and adaptive, learning to identify new types of infringement and execute takedowns on a wide range of platforms.
-                        </p>
-                        <ul class="mt-6 space-y-4 text-slate-700">
-                            <li class="flex items-center">
-                                <svg class="h-6 w-6 text-indigo-600 flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                <span class="font-medium">Proactive Monitoring:</span> We don't wait for you to find an issue.
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="h-6 w-6 text-indigo-600 flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                <span class="font-medium">Adaptive AI Agents:</span> Our system is built to evolve with the internet.
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="h-6 w-6 text-indigo-600 flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                <span class="font-medium">Operational Expertise:</span> We translate a complex problem into a simple solution.
-                            </li>
-                        </ul>
-                    </div>
-                     <div class="md:w-1/2">
-                        <img src="https://placehold.co/800x600/e2e8f0/64748b?text=Modern+Solutions" alt="A professional team working on laptops" class="rounded-xl shadow-lg w-full h-auto object-cover">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Form Section -->
-        <section id="contact" class="py-20 md:py-28 bg-white">
-            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl font-bold text-slate-900">Let's Connect</h2>
-                <p class="mt-4 text-lg text-slate-600">
-                    Tell us about your brand protection needs and we'll show you how CopyrightShield can help.
-                </p>
-                <form id="contact-form" action="https://formspree.io/f/mdklodwa" method="POST" class="mt-12 space-y-6 bg-slate-50 p-8 rounded-xl shadow-md border border-slate-200">
-                    <div>
-                        <label for="name" class="block text-left text-sm font-medium text-slate-700">Full Name</label>
-                        <div class="mt-1">
-                            <input type="text" name="name" id="name" autocomplete="name" required
-                                   class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3 border">
-                        </div>
-                    </div>
-                    <div>
-                        <label for="email" class="block text-left text-sm font-medium text-slate-700">Work Email</label>
-                        <div class="mt-1">
-                            <input id="email" name="_replyto" type="email" autocomplete="email" required
-                                   class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3 border">
-                        </div>
-                    </div>
-                    <div>
-                        <label for="company" class="block text-left text-sm font-medium text-slate-700">Company Name</label>
-                        <div class="mt-1">
-                            <input type="text" name="company" id="company" autocomplete="organization" required
-                                   class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3 border">
-                        </div>
-                    </div>
-                    <div>
-                        <label for="message" class="block text-left text-sm font-medium text-slate-700">How can we help?</label>
-                        <div class="mt-1">
-                            <textarea id="message" name="message" rows="4" required
-                                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3 border"></textarea>
-                        </div>
-                    </div>
-                    <div>
-                        <button type="submit"
-                                class="w-full flex justify-center py-3 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300">
-                            Submit Request
-                        </button>
-                    </div>
-                </form>
-                <!-- Message Box for Form Submission -->
-                <div id="form-message" class="mt-6 hidden bg-green-50 text-green-700 border border-green-200 p-4 rounded-md">
-                    <!-- Dynamic message will go here -->
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-slate-800 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8">
-                <a href="#" class="hover:text-indigo-400 transition duration-300">Terms of Service</a>
-                <a href="#" class="hover:text-indigo-400 transition duration-300">Privacy Policy</a>
-                <a href="#" class="hover:text-indigo-400 transition duration-300">Disclaimer</a>
-            </div>
-            <p class="mt-6">&copy; 2024 CopyrightShield. All rights reserved.</p>
-            <p class="mt-2 text-slate-400">Built with expertise and a passion for brand protection.</p>
+  <!-- Hero -->
+  <section id="hero" class="relative bg-indigo-50 py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-4xl font-extrabold text-slate-900 leading-tight">Remove Infringing Content Fast & Legally</h2>
+        <p class="mt-4 text-lg text-slate-600">We specialize in DMCA takedowns and copyright protection across Google, YouTube, social media, piracy sites, and marketplaces.</p>
+        <div class="mt-6 flex gap-4">
+          <a href="#contact" class="bg-indigo-600 text-white px-6 py-3 rounded-full shadow hover:bg-indigo-700 transition">Start Now</a>
+          <a href="#services" class="px-6 py-3 rounded-full border border-indigo-600 text-indigo-600 hover:bg-indigo-100 transition">Learn More</a>
         </div>
-    </footer>
+        <p class="mt-6 text-sm text-slate-500">Trusted by brands in tech, film, and e-commerce</p>
+      </div>
+      <div>
+        <img src="https://undraw.co/api/illustrations/secure-server.svg" alt="Copyright Protection Illustration" class="rounded-xl shadow-lg">
+      </div>
+    </div>
+  </section>
 
-    <!-- JavaScript for form and mobile menu -->
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
+  <!-- Services -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-slate-900">Our Services</h3>
+      <p class="mt-4 text-slate-600">Comprehensive protection against copyright infringement</p>
+      <div class="mt-12 grid md:grid-cols-3 gap-8">
+        <div class="p-6 border rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="font-semibold text-lg">DMCA Takedowns</h4>
+          <p class="mt-2 text-slate-600">Remove pirated content from websites, forums, and torrent sites effectively.</p>
+        </div>
+        <div class="p-6 border rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="font-semibold text-lg">Search Engine Removal</h4>
+          <p class="mt-2 text-slate-600">Delete infringing links from Google, Bing, and other search engines.</p>
+        </div>
+        <div class="p-6 border rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="font-semibold text-lg">Marketplace & Social Media</h4>
+          <p class="mt-2 text-slate-600">Protect your brand on Amazon, Flipkart, Instagram, Facebook, and TikTok.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+  <!-- Pricing -->
+  <section id="pricing" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-slate-900">Pricing</h3>
+      <p class="mt-4 text-slate-600">Choose the plan that fits your needs</p>
+      <div class="mt-12 grid md:grid-cols-2 gap-8">
+        <!-- Self-Serve -->
+        <div class="flex flex-col p-8 bg-white border rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold text-slate-900">Self-Serve</h4>
+          <p class="mt-4 text-slate-600">For creators and startups who need quick takedowns.</p>
+          <div class="mt-6 text-4xl font-extrabold">$99<span class="text-lg font-normal">/mo</span></div>
+          <a href="#contact" class="mt-6 bg-indigo-600 text-white py-3 px-6 rounded-full hover:bg-indigo-700 transition">Start Now</a>
+        </div>
+        <!-- Managed Services -->
+        <div class="flex flex-col p-8 bg-white border rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold text-slate-900">Managed Services</h4>
+          <p class="mt-4 text-slate-600">For businesses and enterprises needing full-scale monitoring and removals.</p>
+          <div class="mt-6 text-4xl font-extrabold">Custom</div>
+          <a href="#contact" class="mt-6 bg-indigo-600 text-white py-3 px-6 rounded-full hover:bg-indigo-700 transition">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        // Form Submission
-        const contactForm = document.getElementById('contact-form');
-        const formMessage = document.getElementById('form-message');
+  <!-- FAQ -->
+  <section id="faq" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-slate-900 text-center">Frequently Asked Questions</h3>
+      <div class="mt-12 space-y-4">
+        <details class="p-4 border rounded-xl">
+          <summary class="font-semibold cursor-pointer">How fast can you remove content?</summary>
+          <p class="mt-2 text-slate-600">In most cases, infringing content is removed within 24-72 hours depending on the platform.</p>
+        </details>
+        <details class="p-4 border rounded-xl">
+          <summary class="font-semibold cursor-pointer">Do you handle international takedowns?</summary>
+          <p class="mt-2 text-slate-600">Yes, we work with global platforms and ISPs to enforce copyright across regions.</p>
+        </details>
+        <details class="p-4 border rounded-xl">
+          <summary class="font-semibold cursor-pointer">What if a site refuses to comply?</summary>
+          <p class="mt-2 text-slate-600">We escalate to search engines, hosting providers, and legal channels if necessary.</p>
+        </details>
+      </div>
+    </div>
+  </section>
 
-        contactForm.addEventListener('submit', async function(event) {
-            event.preventDefault();
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-slate-50">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-slate-900">Get In Touch</h3>
+      <p class="mt-4 text-slate-600">Let’s secure your content today</p>
+      <form action="#" method="POST" class="mt-8 grid gap-4">
+        <input type="text" placeholder="Your Name" class="p-3 border rounded-lg" required>
+        <input type="email" placeholder="Your Email" class="p-3 border rounded-lg" required>
+        <textarea placeholder="Tell us about your issue" class="p-3 border rounded-lg h-32" required></textarea>
+        <button type="submit" class="bg-indigo-600 text-white py-3 rounded-full hover:bg-indigo-700 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const company = document.getElementById('company').value;
-            const message = document.getElementById('message').value;
+  <!-- Footer -->
+  <footer class="bg-white border-t py-8">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-slate-500">© 2025 CopyrightShield. All rights reserved.</p>
+      <div class="flex gap-4 mt-4 md:mt-0">
+        <a href="#" aria-label="LinkedIn" class="text-slate-500 hover:text-indigo-600">LinkedIn</a>
+        <a href="#" aria-label="Twitter" class="text-slate-500 hover:text-indigo-600">Twitter</a>
+        <a href="#" aria-label="GitHub" class="text-slate-500 hover:text-indigo-600">GitHub</a>
+      </div>
+    </div>
+  </footer>
 
-            if (name && email && company && message) {
-                const formData = new FormData(event.target);
-                
-                try {
-                    const response = await fetch(event.target.action, {
-                        method: 'POST',
-                        body: formData,
-                        headers: {
-                            'Accept': 'application/json'
-                        }
-                    });
-
-                    if (response.ok) {
-                        formMessage.classList.remove('hidden', 'bg-red-50', 'text-red-700', 'border-red-200');
-                        formMessage.classList.add('bg-green-50', 'text-green-700', 'border-green-200');
-                        formMessage.innerHTML = 'Thank you for your message! We will get back to you shortly.';
-                        formMessage.scrollIntoView({ behavior: 'smooth' });
-                        contactForm.reset();
-                    } else {
-                        const data = await response.json();
-                        if (data.error) {
-                             formMessage.innerHTML = 'Form submission failed: ' + data.error;
-                        } else {
-                            formMessage.innerHTML = 'Oops! There was a problem with your submission.';
-                        }
-                        formMessage.classList.remove('hidden', 'bg-green-50', 'text-green-700', 'border-red-200');
-                        formMessage.classList.add('bg-red-50', 'text-red-700', 'border-red-200');
-                        formMessage.scrollIntoView({ behavior: 'smooth' });
-                    }
-                } catch (error) {
-                    formMessage.classList.remove('hidden', 'bg-green-50', 'text-green-700', 'border-red-200');
-                    formMessage.classList.add('bg-red-50', 'text-red-700', 'border-red-200');
-                    formMessage.innerHTML = 'Oops! There was a problem submitting your form. Please try again later.';
-                    formMessage.scrollIntoView({ behavior: 'smooth' });
-                }
-
-            } else {
-                // Display error message for incomplete form
-                formMessage.classList.remove('hidden', 'bg-green-50', 'text-green-700', 'border-green-200');
-                formMessage.classList.add('bg-red-50', 'text-red-700', 'border-red-200');
-                formMessage.innerHTML = 'Please fill out all the required fields.';
-                formMessage.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-        
-        // AI Agent Demo
-        document.getElementById('agentForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            const contentLink = document.getElementById('contentLink').value;
-            const loadingDiv = document.getElementById('loading');
-            const loadingMessage = document.getElementById('loadingMessage');
-            const resultsDiv = document.getElementById('results');
-            const resultsList = document.getElementById('resultsList');
-
-            if (!contentLink) {
-                alert('Please provide a link to your content.');
-                return;
-            }
-
-            loadingDiv.classList.remove('hidden');
-            loadingMessage.innerText = 'Discovery Agent is searching...';
-            resultsDiv.classList.add('hidden');
-            resultsList.innerHTML = '';
-
-            setTimeout(() => {
-                const discoveredLinks = [
-                    'https://pirate-site.net/alien-1979',
-                    'https://social-media.com/user/alien-repost',
-                    'https://blog-reposter.io/film-reviews'
-                ];
-                
-                loadingMessage.innerText = 'Analysis Agent is gathering evidence...';
-
-                setTimeout(() => {
-                    const finalResults = discoveredLinks.map(link => {
-                        return {
-                            url: link,
-                            platform: link.includes('social-media') ? 'Social Media' : (link.includes('pirate') ? 'Pirate Site' : 'Blog'),
-                            whois: 'Fake Whois Data - Host: FakeHost.com',
-                            screenshot: 'https://placehold.co/400x300/e2e8f0/64748b?text=Screenshot+Evidence'
-                        };
-                    });
-
-                    loadingDiv.classList.add('hidden');
-                    resultsDiv.classList.remove('hidden');
-                    
-                    finalResults.forEach(result => {
-                        const listItem = document.createElement('li');
-                        listItem.className = 'p-4 bg-white rounded-lg shadow-md border border-slate-200';
-                        listItem.innerHTML = `
-                            <div class="flex items-start justify-between">
-                                <div>
-                                    <p class="text-sm font-medium text-slate-900">${result.url}</p>
-                                    <p class="text-xs text-slate-500">Platform: ${result.platform}</p>
-                                </div>
-                                <button class="bg-indigo-500 text-white text-xs font-bold py-1 px-3 rounded-full hover:bg-indigo-600 transition duration-300">
-                                    Initiate Takedown Agent
-                                </button>
-                            </div>
-                            <div class="mt-4 text-xs text-slate-600">
-                                <p class="font-semibold">Evidence:</p>
-                                <p><strong>WHOIS Data:</strong> ${result.whois}</p>
-                                <img src="${result.screenshot}" class="mt-2 rounded-md border" alt="Screenshot of infringement">
-                            </div>
-                        `;
-                        resultsList.appendChild(listItem);
-                    });
-                }, 3000); // Simulate a 3-second delay for the Analysis Agent
-            }, 3000); // Simulate a 3-second delay for the Discovery Agent
-        });
-    </script>
 </body>
 </html>
 
